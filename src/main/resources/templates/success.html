@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"/>
+  <title>index</title>
+</head>
+<body>
+    <div sec:authorize="isAuthenticated()">
+        Login success!  Hello :[[${username}]]
+        <a href="/signout">Logout</a>
+    </div>
+</body>
+</html>
